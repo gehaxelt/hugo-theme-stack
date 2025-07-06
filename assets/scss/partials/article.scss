@@ -90,6 +90,10 @@
     gap: 8px;
 }
 
+.article-title-wrapper .summary {
+    color: var(--card-text-color-main);
+}
+
 .article-time,
 .article-translations {
     display: flex;

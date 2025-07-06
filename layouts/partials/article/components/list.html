@@ -22,6 +22,10 @@
         </h3>
         {{ end }}
 
+      <div class="summary">
+        {{ .Summary }}
+      </div>
+
     </div>
 
     {{ $showReadingTime := .Params.readingTime | default (.Site.Params.article.readingTime) }}

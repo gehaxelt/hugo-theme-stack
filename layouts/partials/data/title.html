@@ -31,8 +31,14 @@
         {{ $title = $title | append " - " .Paginator }}
     {{ end }} 
 
-    {{ $title = $title | append " - " $siteTitle }}
     {{ $title = delimit $title "" }}
+{{- end -}}
+
+
+{{- if eq $title $siteTitle -}}
+    {{ $title = $siteTitle }}
+{{ else }}
+    {{ $title = printf "%s | %s" $title $siteTitle }}
 {{- end -}}
 
 {{ return $title }}
