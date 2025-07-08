@@ -1,8 +1,8 @@
 <article>
-    <a href="{{ .RelPermalink }}">
+    
         <div class="article-details">
             <h2 class="article-title">
-                {{- .Title -}}
+                <a href="{{ .RelPermalink }}">{{- .Title -}}</a>
             </h2>
               <div class="summary">
                 {{ .Summary }}
@@ -51,5 +51,4 @@
                 {{ end }}
             </div>
         {{ end }}
-    </a>
 </article>
